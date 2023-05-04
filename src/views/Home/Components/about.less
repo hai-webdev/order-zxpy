@@ -1,0 +1,44 @@
+@import "~@/styles/var.less";
+.about-box {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  .left-layout {
+    width: 50%;
+  }
+  .right-layout {
+    width: 50%;
+    .title {
+      font-size: 55px;
+      font-weight: bold;
+      color: #3c3c3c;
+      margin-bottom: 15px;
+      span {
+        color: @mainColor;
+      }
+    }
+    .en-title {
+      font-size: 20px;
+      color: #959595;
+      margin-bottom: 20px;
+      span {
+        color: @mainColor;
+        font-weight: bold;
+        margin-right: 5px;
+      }
+    }
+    .note {
+      font-size: 20px;
+      color: #656565;
+      p {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

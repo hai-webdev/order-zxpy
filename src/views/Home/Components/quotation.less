@@ -1,0 +1,61 @@
+@import "~@/styles/var.less";
+.quotation-container {
+  background-color: #f1f9eb;
+  padding-top: 110px;
+  .title-box {
+    text-align: center;
+    margin-bottom: 20px;
+    .title {
+      font-size: 56px;
+      color: #3c3c3c;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .subtitle {
+      color: @mainColor;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  .list {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      background-color: #fff;
+      margin: 0 2px 4px;
+      height: 390px;
+      width: calc(50% - 4px);
+      padding: 70px 30px;
+      box-sizing: border-box;
+      .title {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+        .num {
+          line-height: 60px;
+          font-size: 80px;
+          color: @mainColor;
+          margin-right: 8px;
+        }
+        span {
+          line-height: 1;
+          font-size: 25px;
+          font-weight: bold;
+          font-style: italic;
+          color: #3c3c3c;
+        }
+      }
+      .content {
+        color: #3c3c3c;
+        line-height: 1.8;
+       /deep/span {
+          font-weight: bold;
+          color: @mainColor;
+        }
+      }
+    }
+  }
+}

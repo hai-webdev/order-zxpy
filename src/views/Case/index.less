@@ -1,0 +1,53 @@
+@import "~@/styles/var.less";
+.case-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 980px;
+  .case-item {
+    height: 460px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    .bg {
+      position: absolute;
+      height: 100%;
+    }
+    .more {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 352px;
+      height: 80px;
+      border: 3px solid @mainColor;
+      box-sizing: border-box;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        font-size: 35px;
+        color: @mainColor;
+        margin-right: 10px;
+        transition: 0.2s;
+      }
+      svg {
+        fill: @mainColor;
+      }
+      &:hover {
+        background-color: @mainColor;
+        span {
+          color: #fff;
+          transform: translateX(0);
+          letter-spacing: 3px;
+        }
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

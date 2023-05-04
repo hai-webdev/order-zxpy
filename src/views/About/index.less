@@ -1,0 +1,76 @@
+@import "~@/styles/var.less";
+.about-container {
+  padding-top: 80px;
+  background-color: #f1f9eb;
+  h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: #3c3c3c;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+  .about-box {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    height: 320px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    .img {
+      width: 57%;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      img {
+        border-radius: 40px;
+        width: 100%;
+      }
+    }
+    .text-box {
+      width: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .text {
+        width: 290px;
+        transform: translateX(30px);
+        .company {
+          font-size: 25px;
+          font-weight: bold;
+          color: #3c3c3c;
+          margin-bottom: 35px;
+        }
+        .desc {
+          font-size: 20px;
+          color: #3c3c3c;
+          line-height: 1.8;
+          margin-bottom: 20px;
+        }
+        .note {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 1.7;
+          color: #3c3c3c;
+          span {
+            color: @mainColor;
+          }
+        }
+      }
+    }
+  }
+  .about-text{
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto 50px;
+    span{
+        font-weight: bold;
+        color:@mainColor;
+    }
+  }
+}
+ 
